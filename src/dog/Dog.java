@@ -2,7 +2,10 @@ package dog;
 
 public class Dog {
     String name;
+    int size;
     public static void main(String[] args) {
+        System.out.println("");
+
         Dog dog1 = new Dog();
         dog1.bark();
         dog1.name = "Bart";
@@ -16,8 +19,9 @@ public class Dog {
         myDogs[0].name = "Fred";
         myDogs[1].name = "Margie";
 
-        System.out.print("last dog's name is ");
-        System.out.println(myDogs[2].name);
+        myDogs[0].size = 70;
+        myDogs[1].size = 8;
+        myDogs[2].size = 35;
 
         int x = 0;
         while (x < myDogs.length){
@@ -25,8 +29,14 @@ public class Dog {
             x = x + 1;
         }
     }
-    public void bark(){
-        System.out.println(name + " says Ruff!");
+    public void bark() {
+        if (size > 60) {
+            System.out.println("Woof Woof");
+        } else if (size > 14) {
+            System.out.println("Ruff Ruff");
+        } else {
+            System.out.println("Yip Yip");
+        }
     }
     public void eat(){ }
     public void chaseCat() { }
