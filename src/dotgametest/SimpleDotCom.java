@@ -1,4 +1,4 @@
-package dotgame;
+package dotgametest;
 
 public class SimpleDotCom {
     int[] locationCells; // Declare an int array to hold the location cells. Call it locationCells

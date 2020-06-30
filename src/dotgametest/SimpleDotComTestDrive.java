@@ -1,4 +1,4 @@
-package dotgame;
+package dotgametest;
 
 public class SimpleDotComTestDrive {
     public static void main(String[] args) {
